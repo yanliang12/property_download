@@ -3,9 +3,8 @@
 
 docker run -it ^
 -v "E:\data":/data/ ^
-yanliang12/yan_sm_download:1.0.1
-
-bash download_one_min.sh &
+yanliang12/yan_property_download:1.0.1 ^
+bash propertyfinder_download.sh
 
 
 ####propertyfinder_download.sh####
@@ -27,8 +26,6 @@ import yan_web_page_download
 import yan_web_page_batch_download
 from os import listdir
 from os.path import isfile, join, exists
-
-import propertyfinder_parsing
 
 #######
 

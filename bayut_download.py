@@ -4,9 +4,8 @@
 
 docker run -it ^
 -v "E:\data":/data/ ^
-yanliang12/yan_sm_download:1.0.1 
-
-bash bayut_download.sh &
+yanliang12/yan_property_download:1.0.1 ^
+bash bayut_download.sh
 
 
 ####bayut_download.sh####

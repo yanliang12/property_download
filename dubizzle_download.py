@@ -3,7 +3,7 @@
 
 docker run -it ^
 -v "E:\data":/data/ ^
-yanliang12/yan_sm_download:1.0.1 ^
+yanliang12/yan_property_download:1.0.1 ^
 bash dubizzle_download.sh 
 
 
