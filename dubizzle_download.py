@@ -82,7 +82,7 @@ except Exception as e:
 
 yan_web_page_batch_download.args.input_json = 'page_list_urls.json'
 yan_web_page_batch_download.args.local_path = today_folder_property_list_page
-yan_web_page_batch_download.args.curl_file = '/data/dubizzle/dubizzle_list_page.sh'
+yan_web_page_batch_download.args.curl_file = '/data/dubizzle/dubizzle_list_curl.sh'
 yan_web_page_batch_download.args.overwrite = 'true'
 yan_web_page_batch_download.args.page_regex = 'DOCTYPE'
 yan_web_page_batch_download.args.sleep_second_per_page = "5"
@@ -156,10 +156,11 @@ sqlContext.sql(u"""
 
 yan_web_page_batch_download.args.input_json = 'today_page_url'
 yan_web_page_batch_download.args.local_path = today_folder_property_page
-yan_web_page_batch_download.args.curl_file = '/data/dubizzle/dubizzle_page.sh'
+yan_web_page_batch_download.args.curl_file = '/data/dubizzle/dubizzle_page_curl.sh'
 yan_web_page_batch_download.args.sleep_second_per_page = "5"
 yan_web_page_batch_download.args.redicrete = None
 yan_web_page_batch_download.args.page_regex = '(doctype|DOCTYPE)'
 yan_web_page_batch_download.args.overwrite = None
 yan_web_page_batch_download.main()
+
 ###########dubizzle_download.py#############
