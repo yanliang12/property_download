@@ -8,14 +8,12 @@ yanliang12/yan_sm_download:1.0.1
 bash download_one_min.sh &
 
 
-####download_one_min.sh####
+####propertyfinder_download.sh####
 while true; do
-   python3 opensooq_download.py &
-   python3 bayut_download.py
    python3 propertyfinder_download.py
    sleep $[1 * 60]
 done
-####download_one_min.sh####
+####propertyfinder_download.sh####
 
 
 '''
@@ -25,7 +23,6 @@ import re
 import pandas
 import pytz
 import datetime
-import jessica_es
 import yan_web_page_download
 import yan_web_page_batch_download
 from os import listdir

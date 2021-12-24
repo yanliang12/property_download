@@ -24,7 +24,6 @@ import re
 import pandas
 import pytz
 import datetime
-import jessica_es
 import yan_web_page_download
 import yan_web_page_batch_download
 from os import listdir
@@ -47,7 +46,6 @@ sqlContext = SparkSession.builder.getOrCreate()
 first_page = {'page_url':'https://abudhabi.dubizzle.com/search/'}
 
 page_list_urls = []
-
 
 for i in range(1,11):
 	page_list_url = 'https://abudhabi.dubizzle.com/search/?page={}&keywords=&is_basic_search_widget=1&is_search=1'.format(i)
